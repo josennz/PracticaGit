@@ -23,13 +23,13 @@ def imprimir_laberinto(laberinto, fila_jugador, columna_jugador):
 
 def mover_jugador(fila, columna, movimiento):
     """ Actualiza la posición del jugador según el movimiento ingresado. """
-    if movimiento == 'w' and fila > 0:
+    if movimiento == '8' and fila > 0:
         fila -= 1
-    elif movimiento == 's' and fila < FILAS - 1:
+    elif movimiento == '4' and fila < FILAS - 1:
         fila += 1
-    elif movimiento == 'a' and columna > 0:
+    elif movimiento == '6' and columna > 0:
         columna -= 1
-    elif movimiento == 'd' and columna < COLUMNAS - 1:
+    elif movimiento == '2' and columna < COLUMNAS - 1:
         columna += 1
     else:
         print("Movimiento no válido.")
